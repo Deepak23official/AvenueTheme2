@@ -557,7 +557,7 @@
 
     /*added by UI team on 17/06/2024 for theme issue*/
     body{
-        font-family: "Poppins", sans-serif;
+        font-family: "playfair";
         font-weight: 400;
         font-style: normal;
         background-color: #fefcf9;
@@ -615,6 +615,9 @@
     .footer-center a {
         position: relative;
         width: fit-content;
+    }
+    .footer-center h4{
+        font-style: normal !important;
     }
     /*Footer Color*/
     .footer-center{
@@ -865,7 +868,11 @@
     }
     .mslide img{
         object-fit: cover;
-        height: 450px;
+        /*border-radius: 40%  10px 40%;*/
+        border-radius: 80px;
+        object-fit: cover;
+        object-position: center;
+        height: 480px;
     }
      
     .carousel-caption{
@@ -892,7 +899,7 @@
         font-weight: lighter;
     }
     .carousel-caption a{
-        text-align: left;
+        text-align: center;
         background-color: #3d0507 !important;
     }
 
@@ -918,11 +925,12 @@
         font-weight: bold;
     }
     .newsletter{
-        background-color: #fefcf9;
+        background-color: #fbf8f4;
     }
     .newsletter h1 {
         font-weight: 500;
         margin-top: 0px;
+        font-family: "playfair";
     }
 
     #CartDetails td table td, #CartDetails th table th {
@@ -1024,7 +1032,7 @@
     }
     .topheader-navholder-rg #ShopLogo{
         width: 170px;
-		object-fit:contain;
+        object-fit: contain;
     }
     .topheader-navholder-rg .container {
         display: flex;
@@ -1065,7 +1073,7 @@
         align-items: center;
         justify-content: center;
         border-bottom: 1px solid red;
-        height: 100px;
+        height: 200px;
     }
     .banner-title h1{
         font-family: "playfair";
@@ -1074,8 +1082,9 @@
         font-size: 38px !important;
     }
     #Hana_49 section.meet-the-team h2{
-        color: goldenrod;
+        color:#3d0507;
         font-size: 60px;
+        font-family: "playfair";
         font-weight:100 !important;
     }
     .meet-the-team h5{
@@ -1301,10 +1310,19 @@
     .intro-with-image h5{
         font-family: "playfair";
         color: goldenrod;
-        font-size: 36px;
+        font-size: 32px;
     }
     .intro-with-image p{
         font-weight: 200;
+    }
+    .intro-with-image p{
+        font-weight: 200;
+    }
+    .intro-with-image a{
+        border: none;
+        color: white;
+        padding: 10px 30px;
+        background-color:#3d0507;
     }
 
     @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -1651,9 +1669,8 @@
             flex-direction: column;
         }
         .mslide{
-            height: 260px;
-            flex-direction: column;
-            padding: 0px 70px;
+            height: min-content;
+            padding: 0px 20px;
         }
          .carousel-caption h5{
         font-size: 15px !important;
@@ -1677,13 +1694,14 @@
     }
         .mslide img{
             height: auto;
+            margin-bottom: 50px;
+            border-radius: 0px;
         }
 
         .banner-title{
             display: flex;
-            position: unset;
             flex-direction: column;
-            margin-top: 150px;
+            margin-top: 100px;
             padding: 30px 0;
             background-color: #3d0507;
             align-items: center;
@@ -2314,10 +2332,10 @@
                     <div class="row mslide">
                         <div class="col-md-6 pull-right">
                                 <link rel="preload" as="image" href="https://res.cloudinary.com/dizexseir/image/upload/w_auto,c_limit,f_auto,q_auto/v1722598398/ProImages/esgoejwdvqu6ofh8c7oc.png" />
-                                <img src="https://res.cloudinary.com/dizexseir/image/upload/w_auto,c_limit,f_auto,q_auto/v1722598398/ProImages/esgoejwdvqu6ofh8c7oc.png" loading="lazy" alt="welcome slide2" class=" cld-responsive lazyload" style="width:100%; ">
+                                <img src="https://cdn.ezremove.ai/datarm/removetx/2026-03-06/output/397b7046fnrmt0cwr7sv25yjs8.png" loading="lazy" alt="welcome slide2" class=" cld-responsive lazyload" style="width:100%; ">
                         </div>
                         <div class="col-md-6">
-                            <div class="carousel-caption">
+                            <div class="carousel-caption">  
                                 <!--slide main heading-->
                                 <h5>A Unique Collection</h5>
                                 <!--slide sub heading-->
@@ -3685,5 +3703,3 @@
 
 </body>
 </html>
-
-
